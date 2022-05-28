@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>AAML Social</title>
+</head>
+<body>
+      <div id="introdução">
+           <h1>Calculadora By:Guilherme Ramos</h1>
+           <h2>Vamos Fazer Calculos</h2>
+           <h1>Adição</h1>
+      </div>
+      <div id="adição">
+           <input type="number" name="scar" id="scar"> +
+           <input type="number" name="royal" id="royal">
+           <input type="button" value="Calcular" onclick="adição()">
+           <div id="resultadoad"></div>
+      </div>
+      <div id="multiplicação">
+           <h1>Multpicação</h1>
+           <input type="number" name="scar1" id="scar1"> +
+           <input type="number" name="royal1" id="royal1">
+           <input type="button" value="Calcular" onclick="multiplicação()">
+           <div id="resultadomp"></div>
+      </div>
+      <div id="Divisão">
+           <h1>Divisão</h1>
+           <input type="number" name="scar2" id="scar2"> +
+           <input type="number" name="royal2" id="royal2">
+           <input type="button" value="Calcular" onclick="divisão()">  
+           <div id="resultadodi"></div>    
+      </div>
+      <script>
+           function adição() {
+               let a1 = document.getElementById('scar')
+               let a2 = document.getElementById('royal')
+               let va1 = Number(scar.value)
+               let va2 = Number(royal.value)
+               let ca = va1 + va2
+               resultadoad.innerText = (`Seu Resultado Foi ${ca}`)
+           }
+           function multiplicação() {
+               let m1 = document.getElementById('scar1')
+               let m2 = document.getElementById('royal1')
+               let vm1 = Number(scar1.value)
+               let vm2 = Number(royal1.value) 
+               let cm = vm1 * vm2
+               resultadomp.innerText =(`Seu Resultado Foi ${cm}`)
+           }
+           function divisão() {
+               let d1 = document.getElementById('scar2')
+               let d2 = document.getElementById('royal2')
+               let vd1 = Number(scar2.value)
+               let vd2 = Number(royal2.value)
+               let cd = vd1 / vd2
+               resultadodi.innerText = (`Seu Resultado Foi ${cd}`)
+           }
+      </script>
+</body>
+</html>
